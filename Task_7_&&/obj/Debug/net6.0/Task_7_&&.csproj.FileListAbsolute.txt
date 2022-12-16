@@ -1,0 +1,15 @@
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\bin\Debug\net6.0\Task_7_&&.exe
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\bin\Debug\net6.0\Task_7_&&.deps.json
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\bin\Debug\net6.0\Task_7_&&.runtimeconfig.json
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\bin\Debug\net6.0\Task_7_&&.dll
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\bin\Debug\net6.0\Task_7_&&.pdb
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\obj\Debug\net6.0\Task_7_&&.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\obj\Debug\net6.0\Task_7_&&.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\obj\Debug\net6.0\Task_7_&&.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\obj\Debug\net6.0\Task_7_&&.AssemblyInfo.cs
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\obj\Debug\net6.0\Task_7_&&.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\obj\Debug\net6.0\Task_7_&&.dll
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\obj\Debug\net6.0\refint\Task_7_&&.dll
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\obj\Debug\net6.0\Task_7_&&.pdb
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\obj\Debug\net6.0\Task_7_&&.genruntimeconfig.cache
+C:\Users\Lenovo\Documents\ИТ\GeekBrains\C#\Seminar_1\Task_7_&&\obj\Debug\net6.0\ref\Task_7_&&.dll
