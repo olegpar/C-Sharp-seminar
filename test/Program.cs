@@ -1,15 +1,16 @@
-﻿    Console.Write("Введите номер дня недели: ");
-    int DayNumber = Convert.ToInt32(Console.ReadLine());
-    if(DayNumber == 1 || DayNumber == 2 || DayNumber == 3 || DayNumber == 4 || DayNumber == 5)
-    {
-        Console.WriteLine("Это будний день");
-    }
-    else if (DayNumber == 6 || DayNumber == 7)
-    {
-        Console.WriteLine("Ура! Это выходной!");
-    }
-    else
-    {
-        Console.WriteLine("Такого дня недели не существует");
-    }
+﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+// 14212 -> нет
+// 12821 -> да
+// 23432 -> да
+       Console.Write("Введите пятизначное число: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        string S = number.ToString();
+        if(S[0] == S[4] && S[1] == S[3])
+        {
+            Console.WriteLine("Это число является палиндромом");
+        }
+        else
+        {
+            Console.WriteLine("Это число НЕ является палиндромом");
+        }
 
