@@ -1,16 +1,12 @@
-﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
-// 14212 -> нет
-// 12821 -> да
-// 23432 -> да
-       Console.Write("Введите пятизначное число: ");
-        int number = Convert.ToInt32(Console.ReadLine());
-        string S = number.ToString();
-        if(S[0] == S[4] && S[1] == S[3])
-        {
-            Console.WriteLine("Это число является палиндромом");
-        }
-        else
-        {
-            Console.WriteLine("Это число НЕ является палиндромом");
-        }
+﻿// Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+// 6, 1, 33 -> [6, 1, 33]
+
+int [] array = new int[8];
+for(int i = 0; i < array.Length; i++)
+{
+    array[i] = new Random(). Next(0, 99);
+    // Console.Write(array[i] + " ");
+}
+Console.WriteLine('[' + string.Join(", ", array) + ']');
 
