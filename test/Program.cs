@@ -1,12 +1,37 @@
-﻿// Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
-// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
-// 6, 1, 33 -> [6, 1, 33]
+﻿// Задача 38: Задайте массив вещественных чисел. 
+// Найдите разницу между максимальным и минимальным элементов массива.
+// [3.7; 7.2; 2.1; 7.8] -> 5.7
 
-int [] array = new int[8];
+double [] FillArrayWithRandom(double[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        {
+            array[i] =  Math.Round(new Random().Next(0, 10) + new Random().NextDouble(), 2);
+        }
+        return array;
+}
+Console.Write("Введите размер массива: ");
+int length = Convert.ToInt32(Console.ReadLine());
+double [] array = new double [length];
+FillArrayWithRandom(array);
+Console.Write("Ваш случайный массив: ");
+Console.WriteLine(string.Join(" ", array));
+double max = array[0];
 for(int i = 0; i < array.Length; i++)
 {
-    array[i] = new Random(). Next(0, 99);
-    // Console.Write(array[i] + " ");
+    if(array [i] > max)
+    {
+        max = array [i];
+    }
 }
-Console.WriteLine('[' + string.Join(", ", array) + ']');
-
+double min = array[0];
+for(int i = 0; i < array.Length; i++)
+{
+    if(array [i] < min)
+    {
+        min = array [i];
+    }
+}
+Console.WriteLine("Максимальное число: " + max);
+Console.WriteLine("Минимальное число: " + min);
+Console.WriteLine("Разница между максимальным и минимальным числом = " + (max - min));
