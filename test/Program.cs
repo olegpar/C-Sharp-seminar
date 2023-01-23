@@ -1,37 +1,23 @@
-﻿// Задача 38: Задайте массив вещественных чисел. 
-// Найдите разницу между максимальным и минимальным элементов массива.
-// [3.7; 7.2; 2.1; 7.8] -> 5.7
+﻿// Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями 
+// y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+// b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
-double [] FillArrayWithRandom(double[] array)
+Console.WriteLine("Введите начальную точку первой прямой: ");
+double b1 = Convert.ToInt16(Console.ReadLine());
+Console.WriteLine("Введите конечную точку первой прямой: ");
+double k1 = Convert.ToInt16(Console.ReadLine());
+Console.WriteLine("Введите начальную точку второй прямой: ");
+double b2 = Convert.ToInt16(Console.ReadLine());
+Console.WriteLine("Введите конечную точку второй прямой: ");
+double k2 = Convert.ToInt16(Console.ReadLine());
+
+if(b1 == b2 || k1 == k2)
 {
-    for (int i = 0; i < array.Length; i++)
-        {
-            array[i] =  Math.Round(new Random().Next(0, 10) + new Random().NextDouble(), 2);
-        }
-        return array;
+    Console.WriteLine("Прямые не пересекаются");
 }
-Console.Write("Введите размер массива: ");
-int length = Convert.ToInt32(Console.ReadLine());
-double [] array = new double [length];
-FillArrayWithRandom(array);
-Console.Write("Ваш случайный массив: ");
-Console.WriteLine(string.Join(" ", array));
-double max = array[0];
-for(int i = 0; i < array.Length; i++)
+else
 {
-    if(array [i] > max)
-    {
-        max = array [i];
-    }
+    double x = (b2 - b1) / (k1 - k2);
+    double y = k1 * x + b1;
+    Console.WriteLine($"Точка пересечения двух прямых: ({x}; {y})");
 }
-double min = array[0];
-for(int i = 0; i < array.Length; i++)
-{
-    if(array [i] < min)
-    {
-        min = array [i];
-    }
-}
-Console.WriteLine("Максимальное число: " + max);
-Console.WriteLine("Минимальное число: " + min);
-Console.WriteLine("Разница между максимальным и минимальным числом = " + (max - min));
