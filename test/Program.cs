@@ -1,23 +1,40 @@
-﻿// Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями 
-// y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
-// b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
+﻿// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3 
+// 8 4 2 4
+// Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-Console.WriteLine("Введите начальную точку первой прямой: ");
-double b1 = Convert.ToInt16(Console.ReadLine());
-Console.WriteLine("Введите конечную точку первой прямой: ");
-double k1 = Convert.ToInt16(Console.ReadLine());
-Console.WriteLine("Введите начальную точку второй прямой: ");
-double b2 = Convert.ToInt16(Console.ReadLine());
-Console.WriteLine("Введите конечную точку второй прямой: ");
-double k2 = Convert.ToInt16(Console.ReadLine());
-
-if(b1 == b2 || k1 == k2)
+void FillArrayWithRandom(int[,] matrix, int m, int n)
 {
-    Console.WriteLine("Прямые не пересекаются");
+    for(int i = 0; i < m; i++)
+    {
+        for(int j = 0; j < n; j++)
+        {
+            matrix[i,j] = new Random().Next(0, 10);
+            Console.Write(matrix[i,j] + " ");
+        }
+        Console.WriteLine();
+    }
 }
-else
+void ArithmeticMean(int[,] matrix, int m, int n)
 {
-    double x = (b2 - b1) / (k1 - k2);
-    double y = k1 * x + b1;
-    Console.WriteLine($"Точка пересечения двух прямых: ({x}; {y})");
-}
+double Sum = 0;
+Console.Write("Среднее арифметическое каждого столбца: ");
+    for(int j = 0; j < n; j++)
+    {
+        for(int i = 0; i < m; i++)
+        {
+            Sum += matrix[i,j];
+        }
+        Console.Write(Math.Round(Sum / n, 1) + "; ");
+        Sum = 0;
+    }
+} 
+    Console.WriteLine("Введите число m:");
+    int m = Convert.ToInt32(Console.ReadLine()); 
+    Console.WriteLine("Введите число n:");
+    int n = Convert.ToInt32(Console.ReadLine());
+    int [,] matrix = new int[m,n];
+    FillArrayWithRandom(matrix, m, n);
+    ArithmeticMean(matrix, m, n);

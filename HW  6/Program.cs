@@ -10,7 +10,6 @@ switch (task)
 
     Console.WriteLine("Введите число элементов массива");
     int M = Convert.ToInt16(Console.ReadLine());
-
     int [] array = new int[M];
     int i = 0;
     while (i < M)
