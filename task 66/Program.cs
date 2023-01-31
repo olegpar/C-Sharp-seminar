@@ -15,6 +15,6 @@ int SumBetweenMN(int a, int b)
 }
 Console.WriteLine("Введите число M: ");
 int M = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число M: ");
+Console.WriteLine("Введите число N: ");
 int N = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(SumBetweenMN(M,N));
